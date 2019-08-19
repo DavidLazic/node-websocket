@@ -13,7 +13,7 @@ export default () => {
 
   Routes(app);
 
-  app.listen(process.env.PORT_API, () =>
+  app.listen(process.env.PORT || 3000, () =>
     console.log(`:: Running API :: port ${process.env.PORT_API}`)
   );
 };
