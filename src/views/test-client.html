@@ -12,8 +12,10 @@
 </head>
 <body>
   <script>
-    const url = 'ws://localhost:4000';
+    const url = 'ws://htc-spectrum.herokuapp.com';
     const connection = new WebSocket(url);
+
+    console.log('connection', connection);
 
     const events = {
       'open': () => console.log('CONN_OPEN'),
